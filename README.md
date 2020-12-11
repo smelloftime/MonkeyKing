@@ -11,9 +11,9 @@
 
 MonkeyKing helps you post messages to Chinese Social Networks, without their buggy SDKs.
 
-MonkeyKing uses the same analysis process of [openshare](https://github.com/100apps/openshare), support share **Text**, **URL**, **Image**, **Audio**, **Video**, and **File** to **WeChat**, **QQ**, **Alipay** or **Weibo**. MonkeyKing also can post messages to Weibo by webpage. (Note: Audio and Video are specifically for WeChat or QQ, File is only for QQ Dataline)
+MonkeyKing uses the same analysis process of [openshare](https://github.com/100apps/openshare), support share **Text**, **URL**, **Image**, **Audio**, **Video**, and **File** to **WeChat**, **QQ** or **Weibo**. MonkeyKing also can post messages to Weibo by webpage. (Note: Audio and Video are specifically for WeChat or QQ, File is only for QQ Dataline)
 
-MonkeyKing also supports **OAuth** and **Mobile payment** via WeChat and Alipay!
+MonkeyKing also supports **OAuth** and **Mobile payment** via WeChat!
 
 ## Requirements
 
@@ -111,22 +111,6 @@ If user don't have Weibo App installed on their devices then MonkeyKing will use
 
 <img src="https://raw.githubusercontent.com/nixzhu/MonkeyKing/master/images/wbOAuth.png" width="240">
 
-
-### Pay
-
-Example: Alipay
-
-```swift
-let order = MonkeyKing.Order.alipay(urlString: urlString, scheme: nil)
-MonkeyKing.deliver(order) { result in
-    print("result: \(result)")
-}
-```
-> You need to configure `pay.php` in remote server. You can find a example about `pay.php` at Demo project.
-
-<br />
-
-<img src="https://raw.githubusercontent.com/nixzhu/MonkeyKing/master/images/alipay.gif" width="240">
 
 
 ### Launch WeChat Mini App
